@@ -1,27 +1,17 @@
-# IotPanel
+# Descripcion
+Panel de control orientado a Internet de las Cosas (IoT) para gestionar usuarios, dispositivos, graficos, etc.
+Desarrollado con Angular y una REST API con Golang, implementando seguridad con JWT y persmisos, MySQL como base de datos, almacenamiento de objetos (imagenes, pdf, u otros archivos) en AWS-S3.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
+Esta aplicacion cliente se complementa y consume una API Rest. El codigo fuente se muestra a continuacion:
+[Repositorio de API REST con Golang](https://github.com/edwinndev/iotapi-mmj).
+---
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Tecnologias empleadas
+* Backend : Golang (Gorm, Mux), MySQL
+* Frontend : Angular
+* Seguridad : JWT(Go), Proteccion de rutas con guards (Angular)
+* Cliente REST : Postman
+* IDE's : VS Code, Goland (Jetbrains)
+* Despligue y control de versiones : Git y GitHub
+* Produccion: AWS, Heroku, Netlify

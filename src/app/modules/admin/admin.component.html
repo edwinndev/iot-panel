@@ -1,0 +1,30 @@
+<div class="container-panel">
+    <div class="sidebar">
+        <div class="sidebar-title">
+            <img src="../../../assets/icon.png" alt="NO">
+            <p class="fs-6">{{ auth.names }}</p>
+        </div>
+        <div class="sidebar-menu">
+            <nav class="sidebar-menu-items">
+                <div *ngFor="let item of items" class="sidebar-menu-item" routerLinkActive="selected">
+                    <a [routerLink]="[item.path]" class="menu-item">
+                        <span class="material-symbols-outlined text-white">{{item.icon}}</span>
+                        <span class="label">{{ item.label }}</span>
+                    </a>
+                </div>
+                <div class="sidebar-menu-item">
+                    <a class="menu-item">
+                        <span class="material-symbols-outlined text-white">logout</span>
+                        <span (click)="logout()" class="label">Salir</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="content">
+        <a class="mb-4" role="button">
+            <span class="material-symbols-outlined text-white fs-1">add</span>
+        </a>
+        <router-outlet></router-outlet>
+    </div>
+</div>
