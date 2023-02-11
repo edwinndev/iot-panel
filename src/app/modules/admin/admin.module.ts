@@ -14,6 +14,7 @@ import { SwitchSquareComponent } from './components/switch-square/switch-square.
 import { GaugeComponent } from './components/gauge/gauge.component';
 import { GaugesModule } from '@progress/kendo-angular-gauges';
 import { InputsModule } from '@progress/kendo-angular-inputs';
+import { FilesComponent } from './files/files.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { InputsModule } from '@progress/kendo-angular-inputs';
     SwitchRoundComponent,
     SwitchSquareComponent,
     GaugeComponent,
+    FilesComponent,
   ],
   imports: [
     SharedModule,

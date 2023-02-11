@@ -14,16 +14,14 @@ export class GaugeComponent {
   constructor(private thService : ThermometerService) {}
 
   private onSend(): void {
-    this.thService.getThermometerData(this.name).subscribe({
+    this.value = Math.random() * 10;
+    /* this.thService.getThermometerData(this.name).subscribe({
       next: (response) => {
-        if (response.ok) {
-          this.value = response.data.value
-        } else {
-          this.value = 0
-        }
+        if (response.ok) this.value = response.data.value
+        else this.value = 0
       },
       error: (e) => console.error(e),
-    });
+    }); */
   }
 
   public onValueChange(e : any) {
